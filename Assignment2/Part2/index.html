@@ -15,7 +15,7 @@ Description: This program is used to get basic practice with creating a website.
     <h1>Planet data table</h1>
     <table>
         <tr>
-            <th></th>
+            <th colspan="2"></th>
             <th>Name</th>
             <th>Mass (10<sup>24</sup>kg)</th>
             <th>Diameter (km)</th>
@@ -28,7 +28,7 @@ Description: This program is used to get basic practice with creating a website.
             <th>Notes</th>
         </tr>
         <tr>
-            <th rowspan="4" id="TerPlanets">Terrestrial Planets</th>
+            <th rowspan="4" colspan="2" id="TerPlanets">Terrestrial Planets</th>
 
             <th headers="TerPlanets">Mercury</th>
             <td>0.330</td>
@@ -81,8 +81,61 @@ Description: This program is used to get basic practice with creating a website.
                 <td>The red planet</td>
             </tr>
         </tr>
+        <tr>
+            <th rowspan="4" scope = "rowgroup" id = "Jovian Planets">Jovian Planets</th>
+            
+            <th rowspan="2" scope = "rowgroup" headers="Jovian Planets" id = "Gas Giants">Gas Giants</th>
+            
+            <th scope = "row" headers="Gas Giants">Jupiter</th>
+            <td>1898</td>
+            <td>142984</td>
+            <td>1326</td>
+            <td>23.1</td>
+            <td>9.9</td>
+            <td>778.6</td>
+            <td>-110</td>
+            <td>67</td>                
+            <td>The largest planet</td>
+        </tr>
         
+        <tr>
+            <th scope = "row" headers="Gas Giants">Saturn</th>
+            <td>568</td>
+            <td>120536</td>
+            <td>687</td>
+            <td>9</td>
+            <td>10.7</td>
+            <td>1433.5</td>
+            <td>-140</td>
+            <td>62</td>
+            <td></td>
+        </tr>
 
+        <tr>
+            <th scope = "rowgroup" rowspan="2" headers="Jovian Planets" id = "Ice Giants">Ice Giants</th>
+                <th scope = "row" headers="Ice Giants">Uranus</th>
+                <td>86.8</td>
+                <td>51118</td>
+                <td>1271</td>
+                <td>8.7</td>
+                <td>17.2</td>
+                <td>2872.5</td>
+                <td>-195</td>
+                <td>27</td>
+                <td></td>
+        </tr>
+        <tr>
+            <th scope = "row" headers="Ice Giants">Neptune</th>
+            <td>102</td>
+            <td>49528</td>
+            <td>1638</td>
+            <td>11</td>
+            <td>16.1</td>
+            <td>4495.1</td>
+            <td>-200</td>
+            <td>14</td>
+            <td></td>
+        </tr> 
     </table>
   </body>
 </html>
