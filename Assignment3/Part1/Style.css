@@ -1,0 +1,57 @@
+<!--Name: Harithan Raveendran
+File: style.css
+Date: 2026-06-20
+Description: The CSS used in conjunction to the "Assi3Part1.html" page.
+(INFT1206)-->
+html {
+  background-color: white;
+}
+
+body {
+  font: 1.2em / 1.5 system-ui;
+  padding: 20px;
+  width: 500px;
+  background-color: #efefef;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+ul {
+    background-color: white;
+    border: 5px;
+    border-color: purple;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+h1 {
+    color: darkslategray;
+    border-bottom: 10px;
+    border-bottom-color: purple;
+    border-bottom-style: dotted;
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+.job-title {
+    color: darkslategray;
+    font-weight: bold;
+}
+
+link {
+    color: green;
+}
+
+a:hover {
+    color: darkgreen;
+}
+
+a:focus {
+    color: darkgreen
+}
