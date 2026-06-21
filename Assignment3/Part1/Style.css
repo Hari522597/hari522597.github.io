@@ -1,7 +1,7 @@
 /*Name: Harithan Raveendran
 File: style.css
 Date: 2026-06-20
-Description: The CSS used in conjunction to the "Assi3Part1.html" page.
+Description: Description: This is the code for the css file affiliated with the website used for this assignment.
 (INFT1206)*/
 html {
   background-color: white;
@@ -19,8 +19,7 @@ body {
 }
 
 ul {
-    border: 5px;
-    border-color: purple;
+    border: 5px solid purple;
     padding: 30px;
     border-radius: 20px;    
     background-color: white;
@@ -44,14 +43,20 @@ h2 {
     font-weight: bold;
 }
 
-link {
-    color: green;
+ul {
+    color: black;
+}
+
+a{
+    color:green
 }
 
 a:hover {
     color: darkgreen;
+    text-decoration: none;
 }
 
 a:focus {
-    color: darkgreen
+    color: darkgreen;
+    text-decoration: none;
 }
