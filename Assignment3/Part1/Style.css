@@ -1,8 +1,8 @@
-<!--Name: Harithan Raveendran
+/*Name: Harithan Raveendran
 File: style.css
 Date: 2026-06-20
 Description: The CSS used in conjunction to the "Assi3Part1.html" page.
-(INFT1206)-->
+(INFT1206)*/
 html {
   background-color: white;
 }
@@ -19,11 +19,11 @@ body {
 }
 
 ul {
-    background-color: white;
     border: 5px;
     border-color: purple;
     padding: 30px;
-    border-radius: 20px;
+    border-radius: 20px;    
+    background-color: white;
 }
 
 h1 {
