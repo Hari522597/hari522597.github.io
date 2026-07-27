@@ -9,8 +9,8 @@ const images = [
 {filename: "pic2.jpg", alt: "Rock that looks like a wave."},
 {filename: "pic3.jpg", alt: "Purple and white pansies."},
 {filename: "pic4.jpg", alt: "Section of wall from a pharaoh's tomb."},
-{filename: "pic5.jpg", alt: "Large moth on a leaf."}
-]
+{filename: "pic5.jpg", alt: "Large moth on a leaf."},
+];
 
 const baseURL = "https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
 
@@ -19,7 +19,7 @@ for (const image of images){
   replacingImage.src = `${baseURL}${image.filename}`;
   replacingImage.alt = image.alt;
   replacingImage.tabIndex = 0;
-  thumbBar.appendchild(replacingImage);
+  thumbBar.appendChild(replacingImage);
   replacingImage.addEventListener("click", updateDisplayedImage);
   replacingImage.addEventListener("keydown", (e) => {
     {

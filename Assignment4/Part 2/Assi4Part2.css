@@ -1,0 +1,11 @@
+.thumb-bar img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.thumb-bar {
+    display: flex;
+    gap: 12px;
+}
