@@ -7,69 +7,75 @@
     <script defer src="index.js"></script>
   </head>
   <body>
-    <p>We want your feedback!</p>
+      <h1>We want your feedback!</h1>
 
-    <p>We're very excited that you visited the little house in the woods,
-    and we want to hear what you thought of it! Please fill in the below
-    sections. You don't need to provide your name or contact details, but
-    if you do, we'll enter you into a prize draw where you'll have a chance
-    to win prizes.</p>
+      <p>We're very excited that you visited the little house in the woods,
+      and we want to hear what you thought of it! Please fill in the below
+      sections. You don't need to provide your name or contact details, but
+      if you do, we'll enter you into a prize draw where you'll have a chance
+      to win prizes.</p>
 
-    <p>--</p>
+      <form>
+        <div class="form-section">
+          <h2>Facilities</h2>
 
-    <h1>Facilities</h1>
+          <h3>Was the porridge</h3>
+          <p><input type="radio">Too hot?</input></p>
+          <p><input type="radio">Too cold?</input></p>
+          <p><input type="radio">Just right?</input></p>
 
-    <p>Was the porridge</p>
-    <p><input type="radio">Too hot?</input></p>
-    <p><input type="radio">Too cold?</input></p>
-    <p><input type="radio">Just right?</input></p>
+          <h3>Were the beds</h3>
+          <p><input type="radio">Too hard?</input></p>
+          <p><input type="radio">Too soft?</input></p>
+          <p><input type="radio">Just right?</input></p>
 
-    <p>Were the beds</p>
-    <p><input type="radio">Too hard?</input></p>
-    <p><input type="radio">Too soft?</input></p>
-    <p><input type="radio">Just right?</input></p>
+          <h3>Describe the chairs (select all you agree with)</h3>
+          <p><input type="checkbox">Comfy</input></p>
+          <p><input type="checkbox">Luxurious</input></p>
+          <p><input type="checkbox">Hi-tech</input></p>
+          <p><input type="checkbox">Pretty</input></p>
+          <p><input type="checkbox">Majestic</input></p>
+        </div>
+      </form>  
+      <form>
+        <div class="form-section">
+          <h2>About your hosts</h2>
 
-    Describe the chairs (select all you agree with)
-    Comfy
-    Luxurious
-    Hi-tech
-    Pretty
-    Majestic
-
-    --
-
-    About your hosts
-
-    Who's your favorite bear?
-    Papa bear
-    Mama bear
-    Junior
-    Dozer
-
-    Which greeting did you prefer?
-    Wave
-    Friendly greeting
-    Growl
-    Claw marks in the door
-
-    --
-
-    Any other feedback?
-
-    Give us your comments
-
-    --
-
-    Your details
-
-    Name
-    Email
-    Phone
-
-    --
-
-    Submit
-
-    --
+          <p><label for="bears"></label>Who's your favorite bear?</label></p>
+          <select name="bears" id="bears">
+            <option value="papa">Papa bear</option>
+            <option value="mama">Mama bear</option>
+            <option value="junior">Junior</option>
+            <option value="dozer">Dozer</option>
+          </select>
+        </div>
+      </form>
+      <form>
+        <div class="form-section">
+          <p><label for="intro"></label>Which greeting did you prefer?</label></p>
+          <select name="intro" id="intro">
+            <option value="wave">Wave</option>
+            <option value="greeting">Friendly greeting</option>
+            <option value="growl">Growl</option>
+            <option value="claws">Claw marks in the door</option>
+          </select> 
+        </div>
+      </form>     
+      <form>
+        <div class="form-section">
+          <h2>Any other feedback?</h2>
+          <p><label for="feedback"></label>Give us your comments</label></p>
+          <textarea id="feedback" name="feedback" row="3" cols="200"></textarea>
+          <h2>Your details</h2>
+          <p>Name<textarea id="details" name="details" row="1" cols="50"></textarea></p>
+          <p>Email<textarea id="details" name="details" row="1" cols="50"></textarea></p>
+          <p>Phone<textarea id="details" name="details" row="1" cols="50"></textarea></p>
+        </div>
+      </form>
+      <form>
+        <div class="form-section">
+          <button>Submit</button>
+        </div>
+      </form>
   </body>
 </html>
