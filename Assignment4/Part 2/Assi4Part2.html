@@ -1,18 +1,31 @@
-<head>
-  <link rel="stylesheet" href="Assi4Part2.css">
-  <script src="Assi4Part2_Java.js", defer>
-  </script> 
-</head>
-<h1>Image gallery example</h1>
+<!--Name: Harithan Raveendran
+File: Assi4Part2.html
+Date: 2026-07-31
+Description: This program is used to make a simple image gallery. 
+(INFT1206)-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--The line below and the code above is meant for HTML5 validating purposes.-->
+    <meta charset="utf-8"></meta>
+    <!--Indicates the program to apply the CSS - in the file named after href's value - whenever appropriate.-->
+    <link rel="stylesheet" href="Assi4Part2.css">
+    <!--Indicates the program to apply the Javascript code - in the file named after src's value - whenever appropriate.-->
+    <script src="Assi4Part2_Java.js", defer>
+    </script> 
+  </head>
+  <!--Provides the title for the website.-->
+  <h1>Image gallery example</h1>
+<!--Creates the image gallery and its features.-->
+  <div class="full-img">
+    <img
+      class="displayed-img"
+      src="https://mdn.github.io/shared-assets/images/examples/learn/gallery/pic1.jpg"
+      alt="Closeup of a human eye" />
+    <div class="overlay"></div>
+    <button class="dark">Darken</button>
+  </div>
 
-<div class="full-img">
-  <img
-    class="displayed-img"
-    src="https://mdn.github.io/shared-assets/images/examples/learn/gallery/pic1.jpg"
-    alt="Closeup of a human eye" />
-  <div class="overlay"></div>
-  <button class="dark">Darken</button>
-</div>
-
-<div class="thumb-bar"></div>
+  <div class="thumb-bar"></div>
+</html>
 

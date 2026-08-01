@@ -1,20 +1,33 @@
-<head>
-  <script src = "Assi4Part1_Java.js" defer>
-  </script> 
-</head>
-<div>
-  <label for="custom-name">Enter custom name:</label>
-  <input id="custom-name" type="text" placeholder="" />
-</div>
-<fieldset>
-  <legend>Choose locale:</legend>
-  <label for="us">US</label
-  ><input id="us" type="radio" name="uk-us" value="us" checked />
-  <label for="uk">UK</label
-  ><input id="uk" type="radio" name="uk-us" value="uk" />
-</fieldset>
-<div>
-  <button class="generate">Generate random story</button>
-</div>
-<p class="story"></p>
-
+<!--Name: Harithan Raveendran
+File: Assi4Part1.html
+Date: 2026-07-31
+Description: This program is used to create stories with the help of the user's input and in either US or UK locale. 
+(INFT1206)-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--The line below and the code above is meant for HTML5 validating purposes.-->
+    <meta charset="utf-8"></meta>
+    <!--Indicates the program to apply the Javascript code - in the file named after src's value - whenever appropriate.-->
+    <script src = "Assi4Part1_Java.js" defer>
+    </script> 
+  </head>
+  <!--Creates the textbox and an affiliated descripton; they serve as a user input feature, and the context for such respectively..-->
+  <div>
+    <label for="custom-name">Enter custom name:</label>
+    <input id="custom-name" type="text" placeholder="" />
+  </div>
+  <!--Creates the tags that allows the user to choose between the aforementioned locales.-->
+  <fieldset>
+    <legend>Choose locale:</legend>
+    <label for="us">US</label
+    ><input id="us" type="radio" name="uk-us" value="us" checked />
+    <label for="uk">UK</label
+    ><input id="uk" type="radio" name="uk-us" value="uk" />
+  </fieldset>
+  <!--Creates the button that permits the user to form a new generated story.-->
+  <div>
+    <button class="generate">Generate random story</button>
+  </div>
+  <p class="story"></p>
+</html>

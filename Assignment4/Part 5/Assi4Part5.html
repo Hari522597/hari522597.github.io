@@ -1,12 +1,23 @@
+<!--Name: Harithan Raveendran
+File: Assi4Part5.html
+Date: 2026-07-31
+Description: This program serves as a experimental website for a survey; it is used to get practice with the "input," "option" and "textarea" tags in particular.
+(INFT1206)-->
 <!doctype html>
 <html lang="en">
   <head>
+    <!--The line below and the code above is meant for HTML5 validating purposes.-->
     <meta charset="utf-8" />
+    <!--The tag pair explaining the name of the website.-->
     <title>Forms challenge</title>
+    <!--Indicates the program to apply the CSS - in the file named after href's value - whenever appropriate.-->
     <link href="Assi4Part5_CSS.css" rel="stylesheet" />
+    <!--Indicates the program to apply the Javascript code - in the file named after src's value - whenever appropriate.-->
     <script defer src="index.js"></script>
   </head>
   <body>
+      <!--The "h" tags with numbers next to them are meant to be the headings for the website's contents. Whereas the "p" tags represent the places for text that are not
+      apart of any of the survey questions.-->
       <h1>We want your feedback!</h1>
 
       <p>We're very excited that you visited the <a href="#">little house in the woods</a>,
@@ -15,30 +26,44 @@
       if you do, we'll enter you into a <a href="#">prize draw</a> where you'll have a chance
       to win prizes.</p>
 
+      <!--Displays the website's only image.-->
       <img src="https://mdn.github.io/shared-assets/images/examples/learn/woodland-strip.jpg"></img>
+
 
       <form>
         <div class="form-section">
           <h2>Facilities</h2>
 
+          <!--Asks the first multiple choice question with only one permitted answer - in the form of radio buttons.-->
           <h3>Was the porridge</h3>
-          <p><input type="radio">Too hot?</input><input type="radio">Too cold?</input><input type="radio">Just right?</input></p>
+          <!--Provides the answer options.-->
+          <p><input type="radio" id="porridge_A" name="porridge" value="hot"><label for="porridge_A">Too hot?</label>
+          </input><input type="radio" id="porridge_B" name="porridge" value="cold"><label for="porridge_B">Too cold?</label>
+          </input><input type="radio" id="porridge_C" name="porridge" value="right"><label for="porridge_C">Just right?</label></input></p>
 
+          <!--Asks the second multiple choice question with only one permitted answer - in the form of radio buttons.-->
           <h3>Were the beds</h3>
-          <p><input type="radio">Too hard?</input><input type="radio">Too soft?</input><input type="radio">Just right?</input></p>
-
+          <!--Provides the answer options.-->
+          <p><input type="radio" id="bed_A" name="bed" value="hard"><label for="bed_A">Too hard?</label>
+          </input><input type="radio" id="bed_B" name="bed" value="soft"><label for="bed_B">Too cold?</label>
+          </input><input type="radio" id="bed_C" name="bed" value="right"><label for="bed_C">Just right?</label></input></p>
+          
+          <!--Asks the only multiple choice question with multiple permitted answers - in the form of checkboxes.-->
           <h3>Describe the chairs (select all you agree with)</h3>
-          <p><input type="checkbox">Comfy</input><input type="checkbox">Luxurious</input><input type="checkbox">Hi-tech</input><input type="checkbox">Pretty</input><input type="checkbox">Majestic</input></p>
-
+          <!--Provides the answer options.-->
+          <p><input type="checkbox">Comfy</input><input type="checkbox">Luxurious</input>
+            <input type="checkbox">Hi-tech</input><input type="checkbox">Pretty</input><input type="checkbox">Majestic</input></p>
         </div>
       </form>  
       <form>
         <div class="form-section">
+         
           <h2>About your hosts</h2>
-
           <div class="separator">
+             <!--Asks the first question involving a dropdown selection menu for the user's answer.-->
             <label for="bears">Who's your favorite bear?</label>
             <select name="bears" id="bears">
+              <!--Provides the answer options.-->
               <option value="papa">Papa bear</option>
               <option value="mama">Mama bear</option>
               <option value="junior">Junior</option>
@@ -46,8 +71,10 @@
             </select>
           </div>
           <div class="separator">
-            <label for="intro"></label>Which greeting did you prefer?</label>
+            <!--Asks the second question involving a dropdown selection menu for the user's answer.-->
+            <label for="intro">Which greeting did you prefer?</label>
             <select name="intro" id="intro">
+              <!--Provides the answer options.-->
               <option value="wave">Wave</option>
               <option value="greeting">Friendly greeting</option>
               <option value="growl">Growl</option>
@@ -57,26 +84,32 @@
         </div>
       </form>
       <form>
+
         <div class="form-section">
+          <!--Asks the first question involving a text box for the user's answer.-->
           <h2>Any other feedback?</h2>
-          <label for="feedback"></label>Give us your comments</label>
+
+          <label for="feedback">Give us your comments</label>
           <br></br>
-          <div class="separator">
-            <textarea id="feedback" name="feedback" row="3" cols="200"></textarea>
+          <!--Provides the text box.-->
+          <textarea id="feedback" name="feedback" row="5" cols="200"></textarea>
+          <div class="separator">  
           </div>
+          <!--Asks three more questions involving a text box for the user's answer and provides their individual textboxes.-->
           <h2>Your details</h2>
           <div class="separator">
-            Name<textarea id="details" name="details"></textarea>
+            <label for="name">Name</label><input type="name" name="name"></input>
           </div>
           <div class="separator">
-            Email<textarea id="details" name="details"></textarea>
+            <label for="email">Email</label><input type="email" name="email"></input>
           </div>
           <div class="separator">
-            Phone<textarea id="details" name="details"></textarea>
+            <label for="phone">Phone</label><input type="phone" name="phone"></input>
           </div>
         </div>
       </form>
       <form>
+        <!--Creates a button on the website that the user can use to submit their answers to the previous questions-->
         <div class="form-section">
           <button>Submit</button>
         </div>
