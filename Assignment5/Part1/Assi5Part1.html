@@ -1,4 +1,8 @@
-<!--CONTINUE FROM THE AUDIO PLAYER SECTION-->
+<!--Name: Harithan Raveendran
+File: Assi5Part1.html
+Date: 2026-08-09
+Description: This program is used to get practice with making accessibility features for a website. 
+(INFT1206)-->
 <!DOCTYPE html>
 <html>
   <head>
@@ -29,7 +33,8 @@
         </ul>
 
         <form class="search">
-          <input type="search" name="q" placeholder="Search query">
+          <label for="query" class="visually-hidden">Search for a query using this textbox.</label>
+          <input type="search" name="q" placeholder="Search query" id="query" name="query">
           <input type="submit" value="Go!">
         </form>
       </div>
@@ -54,30 +59,33 @@
         <table>
           <thead>
             <tr>
-              <td>Bear Type</td>
-              <td>Coat</td>
-              <td>Adult size</td>
-              <td>Habitat</td>
-              <td>Lifespan</td>
-              <td>Diet</td>
+              <label for="headings" class="visually-hidden">The first row includes the listed headings from left to right: Bear Type, Coat, Adult Size, Habitat, Lifespan, and Diet.</label>
+              <td id="headings" name="headings">Bear Type</td>
+              <td id="headings" name="headings">Coat</td>
+              <td id="headings" name="headings">Adult size</td>
+              <td id="headings" name="headings">Habitat</td>
+              <td id="headings" name="headings">Lifespan</td>
+              <td id="headings" name="headings">Diet</td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td>Wild</td>
-              <td>Brown or black</td>
-              <td>1.4 to 2.8 meters</td>
-              <td>Woods and forests</td>
-              <td>25 to 28 years</td>
-              <td>Fish, meat, plants</td>
+              <label for="wild" class="visually-hidden">The second row includes the following information about the wild bear: Bear Type: Wild, Coat: Brown or black, Adult Size: 1.4 to 2.8 meters, Habitat: Woods and forests, Lifespan: 25 to 28 years, and Diet: Fish, meat and plants.</label>
+              <td id="wild" name="wild">Wild</td>
+              <td id="wild" name="wild">Brown or black</td>
+              <td id="wild" name="wild">1.4 to 2.8 meters</td>
+              <td id="wild" name="wild">Woods and forests</td>
+              <td id="wild" name="wild">25 to 28 years</td>
+              <td id="wild" name="wild">Fish, meat, plants</td>
             </tr>
             <tr>
-              <td>Urban</td>
-              <td>North Face</td>
-              <td>18 to 22</td>
-              <td>Condos and coffee shops</td>
-              <td>20 to 32 years</td>
-              <td>Starbucks, sushi</td>
+              <label for="urban" class="visually-hidden">The third and final row includes the following information about the urban bear: Bear Type: Urban, Coat: North Face, Adult Size: 18 to 22 meters, Habitat: Condos and coffee shops, Lifespan: 20 to 32 years, and Diet: Starbucks and sushi.</label>
+              <td id="urban" name="urban">Urban</td>
+              <td id="urban" name="urban">North Face</td>
+              <td id="urban" name="urban">18 to 22</td>
+              <td id="urban" name="urban">Condos and coffee shops</td>
+              <td id="urban" name="urban">20 to 32 years</td>
+              <td id="urban" name="urban">Starbucks, sushi</td>
             </tr>
           </tbody>
         </table>
@@ -105,6 +113,8 @@
           <source src="media/bear.ogg" type="audio/ogg">
           <p>It looks like your browser doesn't support HTML5 audio players. Use <a href="media/bear.mp3">this link</a> as an alternative.</p>
         </audio>
+        <p><strong><font size="4">Transcript</font></strong></p>
+        <p><strong>Person:</strong> This isn't really a audio fact file about bears, but it is an audio file that you can transcribe.</p>
 
         <aside>
 
@@ -116,7 +126,7 @@
 
         </aside>
         <section class="comments">
-          <div class="show-hide">Show comments</div>
+          <button class="show-hide" type="button">Show comments</button>
 
           <div class="comment-wrapper">
 
@@ -124,11 +134,11 @@
 
             <form class="comment-form">
               <div class="flex-pair">
-                <p>Your name:</p>
+                <label for="name">Your name:</label>
                 <input type="text" name="name" id="name" placeholder="Enter your name">
               </div>
               <div class="flex-pair">
-                <p>Your comment:</p>
+                <label for="comment">Your comment:</label>
                 <input type="text" name="comment" id="comment" placeholder="Enter your comment">
               </div>
               <div>
